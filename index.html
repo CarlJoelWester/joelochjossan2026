@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joel & Josefine</title>
+  <meta name="description" content="Wedding website for Joel & Josefine" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">J + J</div>
+      <div class="links">
+        <a href="#details">Details</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#travel">Travel</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner">
+      <p class="kicker">We’re getting married</p>
+      <h1>Joel & Josefine</h1>
+      <p class="sub">
+        <span class="pill">📅 July 4, 2026</span>
+        <span class="pill">📍 City, Venue</span>
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="#rsvp">RSVP</a>
+        <a class="btn" href="#details">See details</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <!-- Replace this with your photo -->
+      <img src="assets/hero.jpg" alt="Photo placeholder" />
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="details" class="card">
+      <h2>Details</h2>
+      <div class="grid-2">
+        <div>
+          <h3>When</h3>
+          <p><strong>Saturday, July 4</strong><br/>Ceremony starts at <strong>15:00</strong></p>
+          <h3>Where</h3>
+          <p><strong>Venue Name</strong><br/>Street Address<br/>City, Country</p>
+        </div>
+        <div class="image-wrap">
+          <!-- Replace with venue photo -->
+          <img src="assets/venue.jpg" alt="Venue placeholder" />
+          <p class="caption">Image placeholder (venue / vibe shot)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="card">
+      <h2>Schedule</h2>
+      <ul class="timeline">
+        <li><span class="time">15:00</span><span class="dot"></span><span class="item">Ceremony</span></li>
+        <li><span class="time">16:00</span><span class="dot"></span><span class="item">Bubbles + photos</span></li>
+        <li><span class="time">18:00</span><span class="dot"></span><span class="item">Dinner</span></li>
+        <li><span class="time">21:00</span><span class="dot"></span><span class="item">Party</span></li>
+      </ul>
+      <p class="note">Times are placeholders — we’ll update closer to the date.</p>
+    </section>
+
+    <section id="travel" class="card">
+      <h2>Travel & Stay</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Getting there</h3>
+          <p>Add train/flight tips, parking, and how to reach the venue.</p>
+          <h3>Accommodation</h3>
+          <p>List 2–3 hotel options (or “we’ll share suggestions soon”).</p>
+        </div>
+        <div class="image-wrap">
+          <!-- Replace with a map screenshot or city photo -->
+          <img src="assets/travel.jpg" alt="Travel placeholder" />
+          <p class="caption">Image placeholder (map / city)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="card">
+      <h2>RSVP</h2>
+      <p>
+        Add a Google Form link or email us.
+      </p>
+      <div class="rsvp-box">
+        <p><strong>Option A:</strong> Google Form</p>
+        <a class="btn primary" href="https://forms.gle/REPLACE_ME" target="_blank" rel="noreferrer">
+          RSVP via form
+        </a>
+
+        <div class="divider"></div>
+
+        <p><strong>Option B:</strong> Email</p>
+        <p class="mono">youremail@example.com</p>
+      </div>
+      <p class="note">Dietary needs? Plus-ones? Put it in the form (or email us).</p>
+    </section>
+
+    <section class="card">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Dress code?</summary>
+        <p>Write something simple like “Festive, but comfy.”</p>
+      </details>
+      <details>
+        <summary>Gifts?</summary>
+        <p>Add a sentence (e.g., “No gifts needed, but a card means a lot.”)</p>
+      </details>
+      <details>
+        <summary>Kids?</summary>
+        <p>Add your policy here (kid-free, limited spots, etc.).</p>
+      </details>
+    </section>
+
+    <footer class="footer">
+      <p>Made with ♥ — Joel & Josefine</p>
+      <p class="tiny">Last updated: <span id="updated"></span></p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("updated").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
